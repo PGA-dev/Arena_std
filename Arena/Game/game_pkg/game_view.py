@@ -2,7 +2,6 @@
 
 '''View'''
 
-# TODO Define view objects for Arena, player sheet, and opponent sheet
 
 
 class Game_View(object):
@@ -92,7 +91,6 @@ class Game_View(object):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 
     @staticmethod
-    # update to all passed params
     def new_arena_char_updated(char, n_ac, o_ac, n_damage, o_damage, o_hp, n_hp, n_to_hit, o_to_hit):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
         print(
@@ -115,5 +113,5 @@ class Game_View(object):
     @staticmethod
     def display_player_char_death(name, char_type):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-        print(f"Alas, another {char_type} has died, {name} has died; play again?")
+        print(f"Alas, another {char_type} has died, your character {name} has died?")
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
