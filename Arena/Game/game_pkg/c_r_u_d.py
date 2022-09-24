@@ -93,19 +93,24 @@ def delete_char(name):
         )
 
 
-# opponents: dict = [{"name": "player1", "arena_level": 1, "damage": 7, "hp": 25, "to_hit": 35,
-#                     "strength": 15, "dexterity": 15, "constitution": 15},
-#                    {"name": "master", "arena_level": 4, "damage": 50, "hp": 1000, "to_hit": 75,
-#                     "strength": 15, "dexterity": 15, "constitution": 15},
-#                    {"name": "warrior", "arena_level": 1, "damage": 5, "hp": 15, "to_hit": 25,
-#                     "strength": 15, "dexterity": 15, "constitution": 15},
-#                    {"name": "veteran", "arena_level": 2, "damage": 8,
-#                     "hp": 1000, "to_hit": 30,
-#                     "strength": 15, "dexterity": 15, "constitution": 15},
-#                    {"name": "grandmaster", "arena_level": 5,
-#                     "damage": 60, "arena_level": 1250, "to_hit": 80,
-#                     "strength": 15, "dexterity": 15, "constitution": 15},
-#                    {"name": "elite", "arena_level": 3, "damage": 15, "hp": 100, "to_hit": 35,
-#                     "strength": 15, "dexterity": 15, "constitution": 15}]
+'''
+Local testing if necessary
+'''
+# def main():
 
-#player_items: dict = [ {"name": "player1", "hd": 1, "damage": 7, "hp": 25, "to_hit": 35}]
+#     # Main Data List of Dictionaries
+#     opponent_list: list = [{"name": "Brute", "ac": 3, "damage": 75, "hp": 200, "to_hit": 15},
+#                        {"name": "Inside", "ac": 8, "damage": 45, "hp": 100, "to_hit": 65},
+#                        {"name": "Dodge", "ac": 15, "damage": 35, "hp": 75, "to_hit": 75},
+#                        {"name": "Right_Hook", "ac": 7, "damage": 50, "hp": 100, "to_hit": 35},
+#                        {"name": "Feet", "ac": 5, "damage": 60, "hp": 120, "to_hit": 25}]
+
+
+
+
+
+
+# if __name__ == '__main__':
+#     main()
+
+
