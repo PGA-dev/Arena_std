@@ -85,7 +85,7 @@ def delete_char(name):
     index_oppponent = list(
         filter(lambda index_x: index_x[1]["name"] == name, enumerate(opponent_list)))
     if index_oppponent:
-        i, item_to_delete = index_oppponent[0][0], index_oppponent[0][1]
+        i, char_to_delete = index_oppponent[0][0], index_oppponent[0][1]
         del opponent_list[i]
     else:
         raise mvc_exc.CharNotStored(
