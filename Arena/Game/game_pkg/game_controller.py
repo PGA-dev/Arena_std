@@ -20,9 +20,9 @@ class Game_Controller(object):
         chars = self.model.read_chars()
         char_type = self.model.char_type
         if _no_format:
-            self.view.vl_display_character_list(char_type, chars)
+            self.view.simple_character_list(char_type, chars)
         else:
-            self.view.vl_display_character_filled(char_type, chars)
+            self.view.fancy_character_list(char_type, chars)
 
     def show_char(self, char_name):
         try:

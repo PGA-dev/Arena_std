@@ -9,7 +9,7 @@ class Game_View(object):
 
 
     @staticmethod
-    def vl_display_character_list(char_type, opponents_list: list):
+    def simple_character_list(char_type, opponents_list: list):
         print(f"\n")
         print(f"--- ARENA {char_type.upper()} LIST ---")
         print(f"\n")
@@ -24,7 +24,7 @@ class Game_View(object):
             print(f"\n\n")
 
     @staticmethod
-    def vl_display_character_filled(char_type, opponents_list: list):
+    def fancy_character_list(char_type, opponents_list: list):
         print(f"\n")
         print(f"--- ARENA {char_type.upper()} LIST ---")
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
@@ -88,7 +88,7 @@ class Game_View(object):
     @staticmethod
     def display_change_char_type(older, newer):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-        print('Change char type from "{}" to "{}"'.format(older, newer))
+        print(f'Change char type from "{}" to "{}"'.format(older, newer))
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 
     @staticmethod

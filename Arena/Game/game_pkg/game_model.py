@@ -3,9 +3,9 @@ from game_pkg import c_r_u_d
 '''model'''
 class Character_Model(object):
 
-    def __init__(self, character_list_elements):
+    def __init__(self, opponents_list):
         self._char_type = "warrior"
-        self.create_chars(character_list_elements)
+        self.create_chars(opponents_list)
 
     @property
     def char_type(self):

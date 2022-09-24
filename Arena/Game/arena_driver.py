@@ -20,15 +20,15 @@ Driver code Entry Point for Game
 def main():
 
     # Main Data List of Dictionaries
-    opponents: list = [{"name": "Brute", "ac": 3, "damage": 75, "hp": 200, "to_hit": 15},
+    opponent_list: list = [{"name": "Brute", "ac": 3, "damage": 75, "hp": 200, "to_hit": 15},
                        {"name": "Inside", "ac": 8, "damage": 45, "hp": 100, "to_hit": 65},
                        {"name": "Dodge", "ac": 15, "damage": 35, "hp": 75, "to_hit": 75},
                        {"name": "Right_Hook", "ac": 7, "damage": 50, "hp": 100, "to_hit": 35},
                        {"name": "Feet", "ac": 5, "damage": 60, "hp": 120, "to_hit": 25}]
 
 
-    character1 = Game_Controller(Character_Model(opponents), Game_View())
-    character2 = Game_Controller(Character_Model(opponents), Game_View())
+    character1 = Game_Controller(Character_Model(opponent_list), Game_View())
+    character2 = Game_Controller(Character_Model(opponent_list), Game_View())
     #monster1 = Controller(ModelBasic(my_items2), View())
     character2.show_char("Brute")
     character1.show_chars()
