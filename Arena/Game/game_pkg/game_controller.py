@@ -33,7 +33,10 @@ class Game_Controller(object):
             self.view.display_missing_char_error(char_name, e)
 
     def insert_char(self, name, ac, damage, hp, to_hit):
-        assert hp >= 0, "character must have more than 0 hp"
+        assert hp > 0, "character must have more than 0 hp, they are technically dead"
+        assert ac > 0, "character must have more than 0 ac"
+        assert damage >= 0, "character must have more than 0 damage, or they will suck"
+        assert to_hit >= 0, "character must have more than 0 to_hit or they will fail"
         char_type = self.model.char_type
         try:
             self.model.create_char(
@@ -57,7 +60,7 @@ class Game_Controller(object):
             self.view.display_char_not_yet_stored_error(name, char_type, e)
             # if the item is not yet stored and we performed an update, we have
             # 2 options: do nothing or call insert_item to add it.
-            # self.insert_item(name, arena_level, damage, hp, to_hit, strength, dexterity, constitution)
+            self.model.create_char(name,damage, hp, to_hit)
 
     def update_char_type(self, new_char_type):
         old_char_type = self.model.char_type
@@ -73,4 +76,7 @@ class Game_Controller(object):
             self.view.display_char_not_yet_stored_error(name, char_type, e)
 
     def player_death(self, name):
+        char_type = self.model.char_type
+        self.model.read_char(name)
+        self.view.display_player_char_death(name, char_type)
         pass

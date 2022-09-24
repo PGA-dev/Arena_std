@@ -75,7 +75,7 @@ class Game_View(object):
     @staticmethod
     def display_char_not_yet_stored_error(char, char_type, err):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-        print(f"{char.upper()} is not currently a {char_type.upper()} in our Arena {char_type}'s list. Please insert it first!")
+        print(f"{char.upper()} is not currently a {char_type.upper()} in our Arena {char_type}'s list. We will insert it!")
         print(f"{err.args[0]}")
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 
@@ -88,7 +88,7 @@ class Game_View(object):
     @staticmethod
     def display_change_char_type(older, newer):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-        print(f'Change char type from "{}" to "{}"'.format(older, newer))
+        print(f"Change char type from {older} to {newer}")
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 
     @staticmethod
@@ -108,13 +108,12 @@ class Game_View(object):
     def display_char_deletion(name):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
         print(
-            f" {name} is dead, so we have just removed {name} from our Arena")
+            f" {name} is has just been removed {name} from our Arena list")
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 
 # need controller and model settings
     @staticmethod
-    def display_player_char_death(name):
+    def display_player_char_death(name, char_type):
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-        print(
-            f" {name} is dead, would you like to play again?")
+        print(f"Alas, another {char_type} has died, {name} has died; play again?")
         print(f"||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
